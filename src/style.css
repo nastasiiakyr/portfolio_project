@@ -22,7 +22,7 @@
 
   /* Fonts */
   --font-title: PhonkSans, sans-serif;
-  --font-text: "Inter", sans-serif;
+  --font-text: Inter, sans-serif;
 }
 
 body {
@@ -84,6 +84,11 @@ h4 {
 .greeting img {
   width: 64px;
   height: 64px;
+  transition: all 1s ease-in-out;
+}
+
+.greeting img:hover {
+  content: url("/img/avatar-color.png");
 }
 
 .greeting div {
