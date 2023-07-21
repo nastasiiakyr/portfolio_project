@@ -5,18 +5,27 @@
   src: url("/fonts/PhonkSans-Light.otf") format("opentype");
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
 
 /* Variables */
 
 :root {
   /* Colors */
   --col-bg-dark: #1f1f1f;
-  --col-button-blue-grad: #000aff, #555cf138 22%;
+  --col-button-blue-grad: linear-gradient(
+    222deg,
+    #000aff 0%,
+    rgba(85, 92, 241, 0.22) 100%
+  );
+  --col-button-blue-grad-hover: linear-gradient(
+    41deg,
+    #000aff 0%,
+    rgba(85, 92, 241, 0.22) 100%
+  );
   --col-white-grad: linear-gradient(
     337deg,
     #fff 0%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(255, 255, 255, 0.22) 100%
   );
   --col-white: #fff;
 
@@ -84,7 +93,7 @@ h4 {
 .greeting img {
   width: 64px;
   height: 64px;
-  transition: all 1s ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .greeting img:hover {
@@ -98,4 +107,52 @@ h4 {
 .greeting div h4,
 .greeting div p {
   margin: 2px 0;
+}
+
+.main-row-btn {
+  margin-top: 48px;
+}
+
+.btn-main {
+  position: relative;
+  padding: 20px 40px;
+  margin: 2px;
+  background-color: var(--col-bg-dark);
+  border-radius: 56px;
+
+  text-decoration: none;
+  font-family: var(--font-text);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+
+  color: var(--col-white);
+  opacity: 0.9;
+
+  transition: all 200ms ease-in-out;
+}
+
+.btn-main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+  margin: -2px;
+  border-radius: inherit;
+  background-image: var(--col-button-blue-grad);
+}
+
+.btn-main:hover::after {
+  background-image: var(--col-button-blue-grad-hover);
+}
+
+.deco-img-main {
+  width: 1440px;
+  height: 200px;
+  opacity: 0.6;
 }
