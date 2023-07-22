@@ -12,6 +12,7 @@
 :root {
   /* Colors */
   --col-bg-dark: #1f1f1f;
+  --col-bg-dark-cards: #272727;
   --col-button-blue-grad: linear-gradient(
     222deg,
     #000aff 0%,
@@ -34,6 +35,8 @@
   --font-text: Inter, sans-serif;
 }
 
+/* Common elements styles */
+
 body {
   background-color: var(--col-bg-dark);
 }
@@ -50,6 +53,14 @@ p {
   opacity: 0.6;
 }
 
+h2,
+h3 {
+  background: var(--col-white-grad);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 h2 {
   font-family: var(--font-title);
   font-size: 48px;
@@ -57,11 +68,15 @@ h2 {
   font-weight: 300;
   line-height: 56px;
   letter-spacing: 0.48px;
+}
 
-  background: var(--col-white-grad);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+h3 {
+  font-family: var(--font-title);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: 0.32px;
 }
 
 h4 {
@@ -76,9 +91,19 @@ h4 {
   opacity: 0.9;
 }
 
+hr {
+  width: 100%;
+  height: 2px;
+
+  background: var(--col-white-grad);
+  opacity: 0.3;
+}
+
 .container {
   max-width: 1280px;
 }
+
+/* Homepage Main screen styles */
 
 .main-screen {
   padding-top: 116px;
@@ -151,8 +176,50 @@ h4 {
   background-image: var(--col-button-blue-grad-hover);
 }
 
+/* Homepage Decorative image styles */
+
 .deco-img-main {
   width: 1440px;
   height: 200px;
   opacity: 0.6;
+}
+
+/* Homepage Skills screen styles */
+
+.skills-screen {
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.skill-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-top: 40px;
+}
+
+.skill-card {
+  max-width: 298px;
+  height: 400px;
+  margin-top: 20px;
+  padding: 119px 32px 32px;
+
+  border-radius: 8px;
+  background: var(--col-bg-dark-cards);
+}
+
+.skill-card h4 {
+  margin-bottom: 16px;
+}
+
+.skill-card hr {
+  margin: 24px auto;
+}
+
+.tool-icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
 }
