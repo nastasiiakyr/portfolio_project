@@ -1,0 +1,19 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon_logo">
+<g id="Jira Logomark">
+<path id="Element" opacity="0.7" d="M29.2906 15.2143L17.033 2.95648L15.8544 1.77783L6.66117 10.9712L2.45742 15.175C2.02526 15.6072 2.02526 16.3144 2.45742 16.7858L10.8649 25.1934L15.8544 30.2223L25.0476 21.0289L25.2047 20.8718L29.2906 16.7858C29.7228 16.3536 29.7228 15.6465 29.2906 15.2143ZM15.8544 20.2039L11.6507 16.0001L15.8544 11.7962L20.0581 16.0001L15.8544 20.2039Z" fill="white"/>
+<path id="Element_2" d="M15.8546 11.796C13.1045 9.04593 13.1045 4.56706 15.8154 1.81689L6.62207 11.0103L11.6116 15.9999L15.8546 11.796Z" fill="url(#paint0_linear_367_481)"/>
+<path id="Element_3" d="M20.0585 16L15.8547 20.2039C18.6048 22.954 18.6048 27.4328 15.8547 30.2222L25.0872 20.9895L20.0585 16Z" fill="url(#paint1_linear_367_481)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_367_481" x1="18.6904" y1="23.1336" x2="-9.25337" y2="17.9821" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="paint1_linear_367_481" x1="27.923" y1="37.3757" x2="-0.0256782" y2="32.2375" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
