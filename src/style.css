@@ -42,7 +42,8 @@ body {
 }
 
 h1,
-p {
+p,
+.social-media-links a {
   font-family: var(--font-text);
   font-size: 16px;
   font-style: normal;
@@ -99,8 +100,18 @@ hr {
   opacity: 0.3;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   max-width: 1280px;
+}
+
+.skills-screen,
+.contact-screen {
+  margin-top: 100px;
+  margin-bottom: 40px;
 }
 
 /* Homepage Main screen styles */
@@ -145,7 +156,6 @@ hr {
   background-color: var(--col-bg-dark);
   border-radius: 56px;
 
-  text-decoration: none;
   font-family: var(--font-text);
   font-size: 16px;
   font-style: normal;
@@ -186,11 +196,6 @@ hr {
 
 /* Homepage Skills screen styles */
 
-.skills-screen {
-  margin-top: 100px;
-  margin-bottom: 40px;
-}
-
 .skill-cards {
   display: flex;
   flex-wrap: wrap;
@@ -222,4 +227,41 @@ hr {
   justify-content: flex-start;
   gap: 16px;
   flex-wrap: wrap;
+}
+
+/* Homepage Contacts screen styles */
+
+.contact-screen p {
+  margin: 32px 0;
+  max-width: 298px;
+}
+
+.contact-img {
+  width: 705px;
+  height: 90px;
+  opacity: 0.4;
+}
+
+.mail-link {
+  font-weight: 500;
+  opacity: 0.85;
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 40px;
+}
+
+.social-media-links a {
+  opacity: 0.8;
+}
+
+.mail-link:hover,
+.social-media-links a:hover {
+  text-decoration: #ffffff solid underline 1.5px;
+  text-underline-offset: 12px;
+
+  opacity: 0.6;
 }
