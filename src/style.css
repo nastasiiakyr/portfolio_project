@@ -43,7 +43,8 @@ body {
 
 h1,
 p,
-.social-media-links a {
+.social-media-links a,
+.footer .help-ua a {
   font-family: var(--font-text);
   font-size: 16px;
   font-style: normal;
@@ -102,6 +103,7 @@ hr {
 
 a {
   text-decoration: none;
+  color: var(--col-white);
 }
 
 .container {
@@ -110,8 +112,47 @@ a {
 
 .skills-screen,
 .contact-screen {
-  margin-top: 100px;
-  margin-bottom: 40px;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+/* Footer */
+
+.footer {
+  padding-bottom: 40px;
+}
+
+.footer hr {
+  margin: 0 0 40px;
+}
+
+.footer p {
+  font-size: 14px;
+  letter-spacing: 0.15px;
+  margin-bottom: 0;
+}
+
+.footer .help-ua {
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  gap: 4px;
+}
+
+.footer .help-ua a {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.8;
+
+  text-decoration: var(--col-white) solid underline 1px;
+  text-underline-offset: 2px;
+}
+
+.footer .help-ua a:hover {
+  text-decoration: var(--col-white) solid underline 1px;
+  text-underline-offset: 8px;
+
+  opacity: 0.6;
 }
 
 /* Homepage Main screen styles */
@@ -196,10 +237,14 @@ a {
 
 /* Homepage Skills screen styles */
 
+.skills-screen .col-md-4 {
+  text-align: end;
+}
+
 .skill-cards {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+   */
 
   margin-top: 40px;
 }
@@ -242,8 +287,9 @@ a {
   opacity: 0.4;
 }
 
-.mail-link {
-  font-weight: 500;
+.mail-link h4 {
+  margin-bottom: 0;
+  font-weight: 400;
   opacity: 0.85;
 }
 
@@ -260,7 +306,7 @@ a {
 
 .mail-link:hover,
 .social-media-links a:hover {
-  text-decoration: #ffffff solid underline 1.5px;
+  text-decoration: var(--col-white) solid underline 1.5px;
   text-underline-offset: 12px;
 
   opacity: 0.6;
