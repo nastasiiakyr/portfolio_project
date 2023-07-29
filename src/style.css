@@ -33,6 +33,17 @@
   /* Fonts */
   --font-title: PhonkSans, sans-serif;
   --font-text: Inter, sans-serif;
+
+  /* Shadows */
+  --shadow-blue-big: 0px 2.767256498336792px 2.2138051986694336px 0px
+      rgba(16, 15, 74, 0.06),
+    0px 6.650102138519287px 5.32008171081543px 0px rgba(16, 15, 74, 0.09),
+    0px 12.521552085876465px 10.017241477966309px 0px rgba(16, 15, 74, 0.11),
+    0px 22.3363094329834px 17.869047164916992px 0px rgba(16, 15, 74, 0.13),
+    0px 41.777610778808594px 33.422088623046875px 0px rgba(16, 15, 74, 0.16),
+    0px 100px 80px 0px rgba(16, 15, 74, 0.22);
+  --shadow-blue-small: 0px 12.5px 10.02px 0px rgba(16, 15, 74, 0.08),
+    0px 41.777610778808594px 33.422088623046875px 0px rgba(16, 15, 74, 0.13);
 }
 
 /* Common elements styles */
@@ -193,6 +204,14 @@ a {
 
 .active {
   opacity: 0.95;
+}
+
+.scrolling {
+  padding: 0;
+  background-color: var(--col-bg-dark);
+  border-bottom: rgb(255, 255, 255, 0.03) solid 1px;
+
+  box-shadow: var(--shadow-blue-small);
 }
 
 /* Footer */
