@@ -50,6 +50,7 @@
 
 body {
   background-color: var(--col-bg-dark);
+  background-image: url("/img/bg_pattern.png");
 }
 
 h1,
