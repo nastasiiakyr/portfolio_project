@@ -153,6 +153,48 @@ a {
   background-image: var(--col-button-blue-grad-hover);
 }
 
+.mail-link:hover,
+.social-media-links a:hover,
+.nav-link:hover {
+  text-decoration: var(--col-white) solid underline 1.5px;
+  text-underline-offset: 12px;
+
+  color: var(--col-white);
+  opacity: 0.6;
+}
+
+/* Header */
+
+.navbar-brand,
+.navbar-collapse {
+  padding: 10px 0;
+
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+
+  color: var(--col-white);
+}
+
+.navbar-collapse {
+  justify-content: end;
+}
+
+.navbar-nav {
+  gap: 21px;
+}
+
+.nav-link {
+  color: var(--col-white);
+  opacity: 0.7;
+}
+
+.active {
+  opacity: 0.95;
+}
+
 /* Footer */
 
 .footer {
@@ -304,12 +346,4 @@ a {
 
 .social-media-links a {
   opacity: 0.8;
-}
-
-.mail-link:hover,
-.social-media-links a:hover {
-  text-decoration: var(--col-white) solid underline 1.5px;
-  text-underline-offset: 12px;
-
-  opacity: 0.6;
 }

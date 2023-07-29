@@ -22,6 +22,32 @@
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
+    <!-- Header -->
+    <nav class="container navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="/"
+        ><img src="/img/logo.svg" alt="Kyrkilan"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="/">Home</a>
+          <a class="nav-item nav-link" href="#">Works</a>
+          <a class="nav-item nav-link" href="#">About</a>
+          <a class="nav-item nav-link" href="/#contact-screen">Contacts</a>
+        </div>
+      </div>
+    </nav>
+
     <!-- Main screen -->
     <div class="container main-screen">
       <div class="row">
@@ -47,7 +73,7 @@
       <div class="row main-row-btn">
         <div class="col-lg-1"></div>
         <div class="col-lg-4">
-          <a href="#" class="btn-main">Get in Touch</a>
+          <a href="/#contact-screen" class="btn-main">Get in Touch</a>
         </div>
       </div>
     </div>
@@ -203,7 +229,7 @@
     </div>
 
     <!-- Contact me -->
-    <div class="contact-screen">
+    <div class="contact-screen" id="contact-screen">
       <img
         src="/img/contact_img.png"
         alt="Contacts"
