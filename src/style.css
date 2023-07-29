@@ -118,10 +118,6 @@ a {
   color: var(--col-white);
 }
 
-.container {
-  max-width: 1280px;
-}
-
 .skills-screen,
 .contact-screen {
   padding-top: 100px;
@@ -179,7 +175,7 @@ a {
 
 .navbar-brand,
 .navbar-collapse {
-  padding: 10px 0;
+  padding: 10px;
 
   font-family: Inter;
   font-size: 16px;
@@ -304,11 +300,10 @@ a {
 
 .skill-cards {
   margin-top: 40px;
+  gap: 24px;
 }
 
 .skill-card {
-  max-width: 298px;
-  height: 400px;
   margin: 20px auto 0;
   padding: 119px 32px 32px;
 
@@ -366,4 +361,124 @@ a {
 
 .social-media-links a {
   opacity: 0.8;
+}
+
+/* Responsive notes */
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .skill-card {
+    padding-top: 80px;
+  }
+
+  .contact-screen {
+    padding-top: 50px;
+  }
+
+  .contact-img {
+    width: auto;
+    float: none;
+    margin-bottom: 40px;
+  }
+
+  .mail-link {
+    padding-left: 0;
+  }
+
+  .social-media-links {
+    justify-content: flex-start;
+    margin-top: 20px;
+    padding-left: 0;
+  }
+
+  .footer .row div {
+    padding-left: 0;
+  }
+
+  .footer .help-ua {
+    justify-content: start;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .main-screen {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .greeting {
+    flex-direction: column;
+    margin-bottom: 32px;
+    width: 330px;
+  }
+
+  .greeting div {
+    margin-left: 0;
+  }
+
+  .greeting div h4 {
+    margin-top: 20px;
+  }
+
+  .btn-projects {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: start;
+  }
+
+  .skill-cards {
+    width: 335px;
+  }
+
+  .skill-card {
+    margin: 0;
+  }
+
+  .skills-screen,
+  .contact-screen {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  .contact-img {
+    width: 375px;
+    float: none;
+    margin-bottom: 60px;
+  }
+
+  .mail-link {
+    padding-left: 0;
+  }
+
+  .social-media-links {
+    justify-content: flex-start;
+    margin-top: 32px;
+    padding-left: 0;
+    gap: 16px;
+  }
+
+  .footer .row div {
+    padding-left: 0;
+  }
+
+  .footer .help-ua {
+    justify-content: start;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
 }
