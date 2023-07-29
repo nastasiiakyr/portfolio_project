@@ -116,6 +116,43 @@ a {
   padding-bottom: 40px;
 }
 
+.btn-main {
+  position: relative;
+  padding: 20px 40px;
+  margin: 2px;
+  background-color: var(--col-bg-dark);
+  border-radius: 56px;
+
+  font-family: var(--font-text);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+
+  color: var(--col-white);
+  opacity: 0.9;
+
+  transition: all 200ms ease-in-out;
+}
+
+.btn-main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+
+  margin: -2px;
+  border-radius: inherit;
+  background-image: var(--col-button-blue-grad);
+}
+
+.btn-main:hover::after {
+  background-image: var(--col-button-blue-grad-hover);
+}
+
 /* Footer */
 
 .footer {
@@ -190,72 +227,31 @@ a {
   margin-top: 48px;
 }
 
-.btn-main {
-  position: relative;
-  padding: 20px 40px;
-  margin: 2px;
-  background-color: var(--col-bg-dark);
-  border-radius: 56px;
-
-  font-family: var(--font-text);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-
-  color: var(--col-white);
-  opacity: 0.9;
-
-  transition: all 200ms ease-in-out;
-}
-
-.btn-main::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-
-  margin: -2px;
-  border-radius: inherit;
-  background-image: var(--col-button-blue-grad);
-}
-
-.btn-main:hover::after {
-  background-image: var(--col-button-blue-grad-hover);
-}
-
 /* Homepage Decorative image styles */
 
 .deco-img-main {
-  width: 1440px;
-  height: 200px;
+  width: auto;
   opacity: 0.6;
 }
 
 /* Homepage Skills screen styles */
 
-.skills-screen .col-md-4 {
+.btn-projects {
   text-align: end;
 }
 
 .skill-cards {
-  /* display: flex;
-  flex-wrap: wrap;
-   */
-
   margin-top: 40px;
 }
 
 .skill-card {
   max-width: 298px;
   height: 400px;
-  margin-top: 20px;
+  margin: 20px auto 0;
   padding: 119px 32px 32px;
 
   border-radius: 8px;
+  border: rgb(255, 255, 255, 0.03) solid 1px;
   background: var(--col-bg-dark-cards);
 }
 
@@ -276,15 +272,21 @@ a {
 
 /* Homepage Contacts screen styles */
 
+.contact-screen h3,
+.contact-screen p {
+  margin-left: 0;
+  padding-left: 0;
+}
+
 .contact-screen p {
   margin: 32px 0;
   max-width: 298px;
 }
 
 .contact-img {
-  width: 705px;
-  height: 90px;
-  opacity: 0.4;
+  max-width: 705px;
+  opacity: 0.8;
+  float: right;
 }
 
 .mail-link h4 {
