@@ -480,6 +480,16 @@ a {
   .about-me p {
     margin-top: 30px;
   }
+
+  .works-title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .works-title ul {
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -493,9 +503,16 @@ a {
     line-height: 24px;
   }
 
-  .container {
-    margin-left: 20px;
-    margin-right: 20px;
+  .container,
+  .contact-screen .container .row,
+  .footer .container .row {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .mail-link,
+  .social-media-links {
+    padding-left: 0;
   }
 
   .main-screen {
@@ -543,25 +560,20 @@ a {
     margin-bottom: 60px;
   }
 
-  .mail-link {
-    padding-left: 0;
-  }
-
   .social-media-links {
     justify-content: flex-start;
     margin-top: 32px;
-    padding-left: 0;
     gap: 16px;
   }
 
-  .footer .row div {
-    width: 90%;
+  .rights {
     padding-left: 0;
   }
 
   .footer .help-ua {
     justify-content: start;
     margin-top: 10px;
+    padding-left: 0;
     flex-wrap: wrap;
   }
 
@@ -584,6 +596,16 @@ a {
   }
 
   .about-me p {
+    margin-top: 30px;
+  }
+
+  .works-title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .works-title ul {
+    justify-content: flex-start;
     margin-top: 30px;
   }
 }
