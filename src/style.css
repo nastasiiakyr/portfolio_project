@@ -200,7 +200,6 @@ a {
 }
 
 .active {
-  background-color: transparent;
   opacity: 0.95;
 }
 
@@ -386,6 +385,46 @@ a {
 
 .about-me p {
   margin-top: 40px;
+}
+
+/* My works page */
+
+.works-title {
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+.works-title ul {
+  justify-content: flex-end;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: transparent;
+}
+
+.tab-content img {
+  padding-bottom: 30px;
+}
+
+.tab-content .relax:hover {
+  content: url("/img/works/relax_app_color.png");
+}
+
+.tab-content .edison:hover {
+  content: url("/img/works/edison_web_color.png");
+}
+
+.tab-content .laundry:hover {
+  content: url("/img/works/laundry_web_color.png");
+}
+
+.tab-content .weather:hover {
+  content: url("/img/works/weather_app_color.png");
+}
+
+.tab-content .support:hover {
+  content: url("/img/works/support_ukraine_color.png");
 }
 
 /* Responsive notes */
