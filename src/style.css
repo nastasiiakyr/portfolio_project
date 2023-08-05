@@ -211,6 +211,42 @@ a {
   box-shadow: var(--shadow-blue-small);
 }
 
+/* Contacts screen styles */
+
+.contact-screen h3,
+.contact-screen p {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.contact-screen p {
+  margin: 32px 0;
+  max-width: 298px;
+}
+
+.contact-img {
+  max-width: 705px;
+  opacity: 0.8;
+  float: right;
+}
+
+.mail-link h4 {
+  margin-bottom: 0;
+  font-weight: 400;
+  opacity: 0.85;
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 40px;
+}
+
+.social-media-links a {
+  opacity: 0.8;
+}
+
 /* Footer */
 
 .footer {
@@ -327,40 +363,29 @@ a {
   flex-wrap: wrap;
 }
 
-/* Homepage Contacts screen styles */
+/* About me page screen */
 
-.contact-screen h3,
-.contact-screen p {
-  margin-left: 0;
-  padding-left: 0;
+.about-me {
+  padding-top: 100px;
+  padding-bottom: 40px;
 }
 
-.contact-screen p {
-  margin: 32px 0;
-  max-width: 298px;
+.about-me img {
+  max-width: 437px;
+  height: auto;
+  transition: all 200ms ease-in-out;
 }
 
-.contact-img {
-  max-width: 705px;
-  opacity: 0.8;
-  float: right;
+.about-me img:hover {
+  content: url("/img/about-photo-color.png");
 }
 
-.mail-link h4 {
-  margin-bottom: 0;
-  font-weight: 400;
-  opacity: 0.85;
+.about-me h2 {
+  margin-bottom: 60px;
 }
 
-.social-media-links {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  gap: 40px;
-}
-
-.social-media-links a {
-  opacity: 0.8;
+.about-me p {
+  margin-top: 40px;
 }
 
 /* Responsive notes */
