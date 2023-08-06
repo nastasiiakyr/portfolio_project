@@ -35,7 +35,7 @@ toggler.addEventListener("click", function () {
 
 // Closing responsive menu when pressing Contacts button
 
-let menuLinks = document.querySelectorAll(".nav-link");
+let menuLinks = document.querySelectorAll(".menu-item");
 
 menuLinks.forEach((link) => {
   link.addEventListener("click", function () {
