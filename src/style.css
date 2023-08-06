@@ -173,6 +173,25 @@ a {
 
 /* Header */
 
+#header.active {
+  position: fixed;
+  align-items: start;
+
+  width: 100%;
+  height: 100vh;
+
+  background-color: var(--col-bg-dark);
+  border-bottom: rgb(255, 255, 255, 0.03) solid 1px;
+
+  box-shadow: var(--shadow-blue-small);
+
+  z-index: 1000;
+}
+
+#header.active .container {
+  gap: 30px;
+}
+
 .navbar-brand,
 .navbar-collapse {
   padding: 10px;
@@ -192,6 +211,21 @@ a {
 
 .navbar-nav {
   gap: 21px;
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+#custom-toggler {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.disabled {
+  display: none;
 }
 
 .nav-link {

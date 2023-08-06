@@ -34,19 +34,32 @@
           ><img src="/img/logo.svg" alt="Kyrkilan"
         /></a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler d-lg-none"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        <button id="custom-toggler">
+          <img
+            src="icons/icon-burger-menu.svg"
+            alt="Menu"
+            class="menu-icon"
+            width="24px"
+          />
+          <img
+            src="icons/icon_burger_close.svg"
+            alt="Close"
+            class="close-icon disabled"
+            width="24px"
+          />
+        </button>
+
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link" href="/">Home</a>
+            <a class="nav-item nav-link" aria-current="page" href="/">Home</a>
             <a class="nav-item nav-link active" href="/works.html">Works</a>
             <a class="nav-item nav-link" href="/about.html">About</a>
             <a class="nav-item nav-link" href="#contact-screen-works"
@@ -343,7 +356,7 @@
           <div class="col-lg help-ua">
             <p>With love from and to</p>
             <img src="/icons/heart-ua.svg" alt="Help Ukraine" />
-            <p>. If You want to help Ukraine, please,</p>
+            <p>If You want to help Ukraine, please,</p>
             <a href="https://war.ukraine.ua/support-ukraine/" target="_blank"
               >join</a
             >
