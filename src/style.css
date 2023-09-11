@@ -44,6 +44,23 @@
     0px 100px 80px 0px rgba(16, 15, 74, 0.22);
   --shadow-blue-small: 0px 12.5px 10.02px 0px rgba(16, 15, 74, 0.08),
     0px 41.777610778808594px 33.422088623046875px 0px rgba(16, 15, 74, 0.13);
+
+  /* Cursor */
+  --cursor-bg: #b0efda;
+  --cursor-bg-line: #b0efda;
+}
+
+/* Cursor styles */
+
+* {
+  cursor: none;
+}
+
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  cursor: none;
 }
 
 /* Common elements styles */
