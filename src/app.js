@@ -1,4 +1,4 @@
-// Header when scrolling
+// HEADER when scrolling
 
 let header = document.querySelector("#header");
 
@@ -44,7 +44,7 @@ menuLinks.forEach((link) => {
   });
 });
 
-// Custom Cursor
+// CUSTOM CURSOR
 
 class CircleAndDot {
   constructor() {
@@ -203,7 +203,7 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 });
 
-// WORKS CARDS HTML TEMPLATE
+// WORKS CARDS HTML TEMPLATE AND FILTER
 
 // Library of projects with details
 
@@ -274,7 +274,9 @@ for (let card in cardWorks) {
 
 // Pushing to HTML
 
-worksSection.innerHTML = worksHTML;
+if (window.location.pathname === "/works.html") {
+  worksSection.innerHTML = worksHTML;
+}
 
 // Filter of works by type with tabs on the Works Page
 
@@ -300,3 +302,48 @@ tabButtons.forEach((button) => {
     });
   });
 });
+
+// CONTACTS TEMPLATE
+
+let contactsSection = document.querySelector(".contact-screen");
+let contactsHTML = "";
+
+contactsHTML = `<img
+        src="/img/contact_img.png"
+        alt="Contacts"
+        class="img-fluid contact-img"
+      />
+
+      <div class="container">
+        <div class="row">
+          <h3>Contact me</h3>
+          <p>
+            Feel free to get in touch for collaboration or just friendly hello
+          </p>
+        </div>
+        <div class="row">
+          <a
+            href="mailto:anastasiia.kyrkilan@gmail.com"
+            class="col-lg mail-link"
+            ><h4 class="cursor-hover">anastasiia.kyrkilan@gmail.com &nbsp📨</h4></a
+          >
+          <div class="col-lg social-media-links">
+            <a href="https://www.behance.net/kyrkilan" target="_blank"
+              >Behance</a
+            >
+            <a href="https://www.facebook.com/ann.kyr" target="_blank"
+              >Facebook</a
+            >
+            <a
+              href="https://github.com/nastasiiakyr?tab=repositories"
+              target="_blank"
+              >GitHub</a
+            >
+            <a href="https://www.linkedin.com/in/kyrkilan/" target="_blank"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </div>`;
+
+contactsSection.innerHTML = contactsHTML;
