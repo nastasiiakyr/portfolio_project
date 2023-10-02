@@ -203,6 +203,73 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 });
 
+// CONTACTS TEMPLATE
+
+let contactsSection = document.querySelector(".contact-screen");
+
+let contactsHTML = `<img
+        src="/img/contact_img.png"
+        alt="Contacts"
+        class="img-fluid contact-img"
+      />
+
+      <div class="container">
+        <div class="row">
+          <h3>Contact me</h3>
+          <p>
+            Feel free to get in touch for collaboration or just friendly hello
+          </p>
+        </div>
+        <div class="row">
+          <a
+            href="mailto:anastasiia.kyrkilan@gmail.com"
+            class="col-lg mail-link"
+            ><h4 class="cursor-hover">anastasiia.kyrkilan@gmail.com &nbsp📨</h4></a
+          >
+          <div class="col-lg social-media-links">
+            <a href="https://www.behance.net/kyrkilan" target="_blank"
+              >Behance</a
+            >
+            <a href="https://www.facebook.com/ann.kyr" target="_blank"
+              >Facebook</a
+            >
+            <a
+              href="https://github.com/nastasiiakyr?tab=repositories"
+              target="_blank"
+              >GitHub</a
+            >
+            <a href="https://www.linkedin.com/in/kyrkilan/" target="_blank"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+      </div>`;
+
+contactsSection.innerHTML = contactsHTML;
+
+// FOOTER TEMPLATE
+
+let footerSection = document.querySelector(".footer");
+
+let footerHTML = `<hr />
+      <div class="container">
+        <div class="row">
+          <div class="col-lg rights">
+            <p>Designed and developed by Anastasiia Kyrkilan ©</p>
+          </div>
+          <div class="col-lg help-ua">
+            <p>With love from and to</p>
+            <img src="/icons/heart-ua.svg" alt="Help Ukraine" />
+            <p>If You want to help Ukraine, please,</p>
+            <a href="https://war.ukraine.ua/support-ukraine/" target="_blank"
+              >join</a
+            >
+          </div>
+        </div>
+      </div>`;
+
+footerSection.innerHTML = footerHTML;
+
 // WORKS CARDS HTML TEMPLATE AND FILTER
 
 // Library of projects with details
@@ -274,9 +341,9 @@ for (let card in cardWorks) {
 
 // Pushing to HTML
 
-if (window.location.pathname === "/works.html") {
+document.addEventListener("DOMContentLoaded", function () {
   worksSection.innerHTML = worksHTML;
-}
+});
 
 // Filter of works by type with tabs on the Works Page
 
@@ -302,70 +369,3 @@ tabButtons.forEach((button) => {
     });
   });
 });
-
-// CONTACTS TEMPLATE
-
-let contactsSection = document.querySelector(".contact-screen");
-
-let contactsHTML = `<img
-        src="/img/contact_img.png"
-        alt="Contacts"
-        class="img-fluid contact-img"
-      />
-
-      <div class="container">
-        <div class="row">
-          <h3>Contact me</h3>
-          <p>
-            Feel free to get in touch for collaboration or just friendly hello
-          </p>
-        </div>
-        <div class="row">
-          <a
-            href="mailto:anastasiia.kyrkilan@gmail.com"
-            class="col-lg mail-link"
-            ><h4 class="cursor-hover">anastasiia.kyrkilan@gmail.com &nbsp📨</h4></a
-          >
-          <div class="col-lg social-media-links">
-            <a href="https://www.behance.net/kyrkilan" target="_blank"
-              >Behance</a
-            >
-            <a href="https://www.facebook.com/ann.kyr" target="_blank"
-              >Facebook</a
-            >
-            <a
-              href="https://github.com/nastasiiakyr?tab=repositories"
-              target="_blank"
-              >GitHub</a
-            >
-            <a href="https://www.linkedin.com/in/kyrkilan/" target="_blank"
-              >LinkedIn</a
-            >
-          </div>
-        </div>
-      </div>`;
-
-contactsSection.innerHTML = contactsHTML;
-
-// FOOTER TEMPLATE
-
-let footerSection = document.querySelector(".footer");
-
-let footerHTML = `<hr />
-      <div class="container">
-        <div class="row">
-          <div class="col-lg rights">
-            <p>Designed and developed by Anastasiia Kyrkilan ©</p>
-          </div>
-          <div class="col-lg help-ua">
-            <p>With love from and to</p>
-            <img src="/icons/heart-ua.svg" alt="Help Ukraine" />
-            <p>If You want to help Ukraine, please,</p>
-            <a href="https://war.ukraine.ua/support-ukraine/" target="_blank"
-              >join</a
-            >
-          </div>
-        </div>
-      </div>`;
-
-footerSection.innerHTML = footerHTML;
