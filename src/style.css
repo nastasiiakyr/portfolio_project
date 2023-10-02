@@ -182,7 +182,8 @@ a {
 
 .mail-link:hover,
 .social-media-links a:hover,
-.nav-link:hover {
+.nav-link:hover,
+.tab-button:hover {
   text-decoration: var(--col-white) solid underline 1.5px;
   text-underline-offset: 12px;
 
@@ -228,7 +229,8 @@ a {
   display: none;
 }
 
-.nav-link {
+.nav-link,
+.tab-button {
   color: var(--col-white);
   opacity: 0.7;
 }
@@ -428,16 +430,20 @@ a {
   margin-bottom: 60px;
 }
 
-.works-title ul {
+.tab-buttons {
+  display: flex;
   justify-content: flex-end;
+  gap: 30px;
 }
 
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
+.tab-button {
+  border: none;
   background-color: transparent;
+
+  color: var(--col-white);
 }
 
-.tab-content img {
+#works-cards img {
   padding-bottom: 30px;
 }
 
