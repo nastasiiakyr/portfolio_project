@@ -1,11 +1,11 @@
 /* Adding fonts */
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+
 @font-face {
   font-family: PhonkSans;
   src: url("/fonts/PhonkSans-Light.otf") format("opentype");
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
 
 /* Variables */
 
