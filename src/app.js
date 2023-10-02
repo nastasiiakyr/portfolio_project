@@ -306,9 +306,8 @@ tabButtons.forEach((button) => {
 // CONTACTS TEMPLATE
 
 let contactsSection = document.querySelector(".contact-screen");
-let contactsHTML = "";
 
-contactsHTML = `<img
+let contactsHTML = `<img
         src="/img/contact_img.png"
         alt="Contacts"
         class="img-fluid contact-img"
@@ -347,3 +346,26 @@ contactsHTML = `<img
       </div>`;
 
 contactsSection.innerHTML = contactsHTML;
+
+// FOOTER TEMPLATE
+
+let footerSection = document.querySelector(".footer");
+
+let footerHTML = `<hr />
+      <div class="container">
+        <div class="row">
+          <div class="col-lg rights">
+            <p>Designed and developed by Anastasiia Kyrkilan ©</p>
+          </div>
+          <div class="col-lg help-ua">
+            <p>With love from and to</p>
+            <img src="/icons/heart-ua.svg" alt="Help Ukraine" />
+            <p>If You want to help Ukraine, please,</p>
+            <a href="https://war.ukraine.ua/support-ukraine/" target="_blank"
+              >join</a
+            >
+          </div>
+        </div>
+      </div>`;
+
+footerSection.innerHTML = footerHTML;
