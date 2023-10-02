@@ -231,6 +231,22 @@ let cardWorks = {
     "image color": "/img/works/weather_app_color.png",
     alt: "Weather app",
   },
+
+  "Laundry in London": {
+    type: "design",
+    link: "https://www.behance.net/gallery/89852873/Landing-page-for-elegant-clothes-laundry",
+    "image black": "/img/works/laundry_web.png",
+    "image color": "/img/works/laundry_web_color.png",
+    alt: "Laundry in London",
+  },
+
+  "Support Ukraine page": {
+    type: "design, front",
+    link: "https://www.shecodes.io/workshops/shecodes-basics-c6a6b8f0-6f86-45b6-8911-0116302cc636/projects/1605069",
+    "image black": "/img/works/support_ukraine.png",
+    "image color": "/img/works/support_ukraine_color.png",
+    alt: "Support Ukraine",
+  },
 };
 
 // HTML template

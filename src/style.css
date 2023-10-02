@@ -447,26 +447,6 @@ a {
   padding-bottom: 30px;
 }
 
-.tab-content .relax:hover {
-  content: url("/img/works/relax_app_color.png");
-}
-
-.tab-content .edison:hover {
-  content: url("/img/works/edison_web_color.png");
-}
-
-.tab-content .laundry:hover {
-  content: url("/img/works/laundry_web_color.png");
-}
-
-.tab-content .weather:hover {
-  content: url("/img/works/weather_app_color.png");
-}
-
-.tab-content .support:hover {
-  content: url("/img/works/support_ukraine_color.png");
-}
-
 /* Responsive notes */
 
 @media (min-width: 1201px) and (max-width: 1400px) {
