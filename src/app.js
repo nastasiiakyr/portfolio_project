@@ -226,7 +226,7 @@ let cardWorks = {
 
   "Weather app": {
     type: "design, front",
-    link: "https://www.behance.net/gallery/104890723/Edison-light-web-concept-for-lamps-online-store",
+    link: "https://whimsical-biscochitos-b00976.netlify.app/",
     "image black": "/img/works/weather_app.png",
     "image color": "/img/works/weather_app_color.png",
     alt: "Weather app",
