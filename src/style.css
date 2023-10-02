@@ -555,6 +555,10 @@ a {
     justify-content: flex-start;
     margin-top: 30px;
   }
+
+  .circle-and-dot {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
@@ -693,5 +697,9 @@ a {
   .works-title ul {
     justify-content: flex-start;
     margin-top: 30px;
+  }
+
+  .circle-and-dot {
+    display: none;
   }
 }
