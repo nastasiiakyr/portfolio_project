@@ -202,3 +202,58 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 });
+
+// WORKS CARDS HTML TEMPLATE
+
+// Library of projects with details
+
+let cardWorks = {
+  "Relax and meditation App": {
+    link: "https://www.behance.net/gallery/123818199/Relax-Me-Mobile-App-for-Relax-Meditation",
+    "image black": "/img/works/relax_app.png",
+    "image color": "/img/works/relax_app_color.png",
+    alt: "Relax & meditation App",
+  },
+
+  "Online shop of lights": {
+    link: "https://www.behance.net/gallery/104890723/Edison-light-web-concept-for-lamps-online-store",
+    "image black": "/img/works/edison_web.png",
+    "image color": "/img/works/edison_web_color.png",
+    alt: "Online shop of lights",
+  },
+
+  "Weather app": {
+    link: "https://www.behance.net/gallery/104890723/Edison-light-web-concept-for-lamps-online-store",
+    "image black": "/img/works/weather_app.png",
+    "image color": "/img/works/weather_app_color.png",
+    alt: "Weather app",
+  },
+};
+
+// HTML template
+
+let worksSection = document.querySelector("#works-cards");
+let worksHTML = "";
+
+for (let card in cardWorks) {
+
+  if (cardWorks.hasOwnProperty(card)) {
+    worksHTML += `<div class="col-lg-6">
+              <a
+                href="${cardWorks[card]["link"]}"
+                target="_blank"
+              >
+                <img
+                  src="${cardWorks[card]["image black"]}"
+                  alt="${cardWorks[card]["alt"]}"
+                  class="img-fluid image cursor-hover"
+                  onmouseover="this.src = '${cardWorks[card]["image color"]}'" onmouseout="this.src = '${cardWorks[card]["image black"]}'"
+                />
+              </a>
+            </div>`;
+  }
+}
+
+// Pushing to HTML
+
+worksSection.innerHTML = worksHTML;
