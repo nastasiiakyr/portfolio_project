@@ -255,7 +255,7 @@ let footerHTML = `<hr />
       <div class="container">
         <div class="row">
           <div class="col-lg rights">
-            <p>Designed and developed by Anastasiia Kyrkilan ©</p>
+            <p>Designed and developed by Anastasiia Kyrkilan &copy;</p>
           </div>
           <div class="col-lg help-ua">
             <p>With love from and to</p>
