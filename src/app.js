@@ -278,40 +278,35 @@ let cardWorks = {
   "Relax and meditation App": {
     type: "design",
     link: "https://www.behance.net/gallery/123818199/Relax-Me-Mobile-App-for-Relax-Meditation",
-    "image black": "/img/works/relax_app.png",
-    "image color": "/img/works/relax_app_color.png",
+    image: "/img/works/relax_app_color.png",
     alt: "Relax & meditation App",
   },
 
   "Online shop of lights": {
     type: "design",
     link: "https://www.behance.net/gallery/104890723/Edison-light-web-concept-for-lamps-online-store",
-    "image black": "/img/works/edison_web.png",
-    "image color": "/img/works/edison_web_color.png",
+    image: "/img/works/edison_web_color.png",
     alt: "Online shop of lights",
   },
 
   "Weather app": {
     type: "design, front",
     link: "https://whimsical-biscochitos-b00976.netlify.app/",
-    "image black": "/img/works/weather_app.png",
-    "image color": "/img/works/weather_app_color.png",
+    image: "/img/works/weather_app_color.png",
     alt: "Weather app",
   },
 
   "Laundry in London": {
     type: "design",
     link: "https://www.behance.net/gallery/89852873/Landing-page-for-elegant-clothes-laundry",
-    "image black": "/img/works/laundry_web.png",
-    "image color": "/img/works/laundry_web_color.png",
+    image: "/img/works/laundry_web_color.png",
     alt: "Laundry in London",
   },
 
   "Support Ukraine page": {
     type: "design, front",
     link: "https://www.shecodes.io/workshops/shecodes-basics-c6a6b8f0-6f86-45b6-8911-0116302cc636/projects/1605069",
-    "image black": "/img/works/support_ukraine.png",
-    "image color": "/img/works/support_ukraine_color.png",
+    image: "/img/works/support_ukraine_color.png",
     alt: "Support Ukraine",
   },
 };
@@ -329,10 +324,10 @@ for (let card in cardWorks) {
                 target="_blank"
               >
                 <img
-                  src="${cardWorks[card]["image black"]}"
+                  src="${cardWorks[card]["image"]}"
                   alt="${cardWorks[card]["alt"]}"
                   class="img-fluid cursor-hover"
-                  onmouseover="this.src = '${cardWorks[card]["image color"]}'" onmouseout="this.src = '${cardWorks[card]["image black"]}'"
+                  
                 />
               </a>
             </div>`;

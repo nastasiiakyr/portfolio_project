@@ -337,11 +337,12 @@ a {
 .greeting img {
   width: 64px;
   height: 64px;
-  transition: all 200ms ease-in-out;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
 }
 
 .greeting img:hover {
-  content: url("/img/avatar-color.png");
+  filter: grayscale(0%);
 }
 
 .greeting div {
@@ -408,11 +409,12 @@ a {
 
 .about-me img {
   width: 437px;
-  transition: all 200ms ease-in-out;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
 }
 
 .about-me img:hover {
-  content: url("/img/about-photo-color.png");
+  filter: grayscale(0%);
 }
 
 .about-me h2 {
@@ -445,7 +447,14 @@ a {
 
 #works-cards img {
   padding-bottom: 30px;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
 }
+
+#works-cards img:hover {
+  filter: grayscale(0%);
+}
+
 
 /* Responsive notes */
 
