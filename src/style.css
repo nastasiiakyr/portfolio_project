@@ -63,6 +63,17 @@ button:not(:disabled) {
   cursor: none;
 }
 
+/* Animation */
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 /* Common elements styles */
 
 body {
@@ -136,6 +147,7 @@ a {
   color: var(--col-white);
 }
 
+.certificates-screen,
 .skills-screen,
 .contact-screen {
   padding-top: 100px;
@@ -416,12 +428,56 @@ a {
   filter: grayscale(0%);
 }
 
-.about-me h1 {
+.about-me h1,
+.certificates-screen h2 {
   margin-bottom: 60px;
 }
 
 .about-me p {
   margin-top: 40px;
+}
+
+.certificates-screen {
+  width: 100%;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.certificates-container {
+  display: flex;
+  gap: 10px;
+  width: max-content;
+  margin-bottom: 10px;
+}
+
+.certificates {
+  display: flex;
+  gap: 10px;
+  animation: scroll 60s linear infinite;
+  animation-play-state: running;
+  animation-delay: 0s;
+  animation-direction: normal;
+}
+
+.certificates-container .scroll-back {
+  animation-direction: reverse;
+}
+
+.certificates-container:hover .certificates {
+  animation-play-state: paused;
+}
+
+.certificates-screen img {
+  margin: 0;
+  padding: 0;
+  height: 250px;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+
+.certificates-screen img:hover {
+  filter: grayscale(0%);
 }
 
 /* My works page */
@@ -453,7 +509,6 @@ a {
 #works-cards img:hover {
   filter: grayscale(0%);
 }
-
 
 /* Responsive notes */
 
