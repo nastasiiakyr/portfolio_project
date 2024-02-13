@@ -215,7 +215,7 @@ let contactsHTML = `<img
 
       <div class="container">
         <div class="row">
-          <h3>Contact me</h3>
+          <h2>Contact me</h2>
           <p>
             Feel free to get in touch for collaboration or just friendly hello
           </p>
@@ -224,7 +224,7 @@ let contactsHTML = `<img
           <a
             href="mailto:anastasiia.kyrkilan@gmail.com"
             class="col-lg mail-link"
-            ><h4 class="cursor-hover">anastasiia.kyrkilan@gmail.com &nbsp📨</h4></a
+            ><h3 class="cursor-hover">anastasiia.kyrkilan@gmail.com &nbsp📨</h3></a
           >
           <div class="col-lg social-media-links">
             <a href="https://www.behance.net/kyrkilan" target="_blank"
