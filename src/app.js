@@ -342,25 +342,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Filter of works by type with tabs on the Works Page
 
-const tabButtons = document.querySelectorAll(".tab-button");
-const works = document.querySelectorAll(".work");
+document.addEventListener("DOMContentLoaded", function () {
+  const tabButtons = document.querySelectorAll(".tab-button");
+  const works = document.querySelectorAll(".work");
 
-tabButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    tabButtons.forEach((tab) => tab.classList.remove("active"));
+  tabButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      tabButtons.forEach((tab) => tab.classList.remove("active"));
 
-    button.classList.add("active");
+      button.classList.add("active");
 
-    const filter = button.getAttribute("data-filter");
+      const filter = button.getAttribute("data-filter");
 
-    works.forEach((work) => {
-      const workType = work.getAttribute("data-category").split(", ");
+      works.forEach((work) => {
+        const workType = work.getAttribute("data-category").split(", ");
 
-      if (filter === "all" || workType.includes(filter)) {
-        work.classList.remove("disabled");
-      } else {
-        work.classList.add("disabled");
-      }
+        if (filter === "all" || workType.includes(filter)) {
+          work.classList.remove("disabled");
+        } else {
+          work.classList.add("disabled");
+        }
+      });
     });
   });
 });
