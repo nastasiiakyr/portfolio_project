@@ -372,14 +372,49 @@ document.addEventListener("DOMContentLoaded", function () {
 // Library of certificates with details
 
 let certificates = {
-  "Google first": {
-    image: "/img/certificates/Coursera01.jpg",
-    alt: "Google first",
+  "QA Testing": {
+    image: "/img/certificates/QATestLab01.jpg",
+    alt: "QA Testing certificate from QATestLab",
   },
 
-  "Google second": {
+  "GoIT English HTML": {
+    image: "/img/certificates/GoIT01.png",
+    alt: "GoIT English HTML certificate",
+  },
+
+  "SheCodes Introducing to coding": {
+    image: "/img/certificates/SheCodes01.png",
+    alt: "SheCodes Introducing to coding certificate",
+  },
+
+  "SheCodes Web Development": {
+    image: "/img/certificates/SheCodes02.png",
+    alt: "SheCodes Web Development certificate",
+  },
+
+  "SheCodes Responsive Web Development": {
+    image: "/img/certificates/SheCodes03.png",
+    alt: "SheCodes Responsive Web Development certificate",
+  },
+
+  "SheCodes React Development": {
+    image: "/img/certificates/SheCodes04.png",
+    alt: "SheCodes React Development certificate",
+  },
+
+  "Google UX Design Foundations": {
+    image: "/img/certificates/Coursera01.jpg",
+    alt: "Google professional certificate in UX Design: Foundations of UX Design",
+  },
+
+  "Google UX Design Start": {
     image: "/img/certificates/Coursera02.jpg",
-    alt: "Google second",
+    alt: "Google professional certificate in UX Design: Start the process - Empathize, Define and Idiate",
+  },
+
+  "Google UX Design Research": {
+    image: "/img/certificates/Coursera03.jpeg",
+    alt: "Google professional certificate in UX Design: Conduct UX Research and Test Early Concepts",
   },
 };
 
@@ -390,7 +425,7 @@ let certificatesHTML = "";
 
 for (let certificate in certificates) {
   if (certificates.hasOwnProperty(certificate)) {
-    certificatesHTML += `<img src="${certificates[certificate]["image"]}" alt="${certificates[certificate]["alt"]}">`;
+    certificatesHTML += `<img src="${certificates[certificate]["image"]}" alt="${certificates[certificate]["alt"]}" class="img-certificate">`;
   }
 }
 
