@@ -366,3 +366,38 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// ABOUT ME SERTIFICATES HTML TEMPLATE
+
+// Library of certificates with details
+
+let certificates = {
+  "Google first": {
+    image: "/img/certificates/Coursera01.jpg",
+    alt: "Google first",
+  },
+
+  "Google second": {
+    image: "/img/certificates/Coursera02.jpg",
+    alt: "Google second",
+  },
+};
+
+// HTML template
+
+let certificatesSection = document.querySelectorAll(".certificates");
+let certificatesHTML = "";
+
+for (let certificate in certificates) {
+  if (certificates.hasOwnProperty(certificate)) {
+    certificatesHTML += `<img src="${certificates[certificate]["image"]}" alt="${certificates[certificate]["alt"]}">`;
+  }
+}
+
+// Pushing to HTML
+
+document.addEventListener("DOMContentLoaded", function () {
+  certificatesSection.forEach(function (certificateSection) {
+    certificateSection.innerHTML = certificatesHTML;
+  });
+});
