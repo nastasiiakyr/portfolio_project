@@ -282,18 +282,39 @@ let cardWorks = {
     alt: "Relax & meditation App",
   },
 
+  "Maksy-english": {
+    type: "design, front",
+    link: "https://www.maksyenglish.com.ua/",
+    image: "/img/works/maksy-english_web.png",
+    alt: "English learning website on WordPress for maksy_english",
+  },
+
+  "Weather app JS": {
+    type: "front",
+    link: "https://weather-app-vanilla-js-kyrkilan.netlify.app/",
+    image: "/img/works/weather_app_color.png",
+    alt: "Weather app Java Script",
+  },
+
+  "Weather app React": {
+    type: "design, front",
+    link: "https://weather-app-react-kyrkilan.netlify.app/",
+    image: "/img/works/weather_app_react.png",
+    alt: "Weather app React.js",
+  },
+
+  "Jane Kyr Design": {
+    type: "front",
+    link: "https://janekyrdesign.com/",
+    image: "/img/works/janekyr_web.png",
+    alt: "Personal landing for Jane Kyr",
+  },
+
   "Online shop of lights": {
     type: "design",
     link: "https://www.behance.net/gallery/104890723/Edison-light-web-concept-for-lamps-online-store",
     image: "/img/works/edison_web_color.png",
     alt: "Online shop of lights",
-  },
-
-  "Weather app": {
-    type: "design, front",
-    link: "https://whimsical-biscochitos-b00976.netlify.app/",
-    image: "/img/works/weather_app_color.png",
-    alt: "Weather app",
   },
 
   "Laundry in London": {
@@ -305,7 +326,7 @@ let cardWorks = {
 
   "Support Ukraine page": {
     type: "design, front",
-    link: "https://www.shecodes.io/workshops/shecodes-basics-c6a6b8f0-6f86-45b6-8911-0116302cc636/projects/1605069",
+    link: "https://www.shecodes.io/cohorts/shecodes-basics-c6a6b8f0-6f86-45b6-8911-0116302cc636/projects/1605069",
     image: "/img/works/support_ukraine_color.png",
     alt: "Support Ukraine",
   },
