@@ -258,6 +258,104 @@ a {
   box-shadow: var(--shadow-blue-small);
 }
 
+/* Themes Switcher */
+
+span.switcher {
+  position: relative;
+
+  width: 50px;
+  height: 24px;
+  border-radius: 50px;
+  margin: 0;
+  input {
+    appearance: none;
+
+    position: relative;
+
+    width: 50px;
+    height: 24px;
+    border-radius: 50px;
+
+    background-color: transparent;
+    outline: none;
+
+    &:before,
+    &:after {
+      z-index: 2;
+
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      color: var(--col-white);
+    }
+    &:before {
+      content: url("/icons/icon-sun.svg");
+      left: 6px;
+      opacity: 0;
+    }
+    &:after {
+      content: url("/icons/icon-moon.svg");
+      right: 6px;
+    }
+  }
+  label {
+    z-index: 1;
+    position: absolute;
+    top: 3px;
+    bottom: 3px;
+
+    border-radius: 50px;
+  }
+  &.switcher-1 {
+    input {
+      transition: 0.25s -0.1s;
+      &:checked {
+        background-color: transparent;
+        border: 0.81px solid var(--col-bg-dark-cards);
+        &:before {
+          opacity: 1;
+          transition: opacity 0.5s;
+          
+        }
+        &:after {
+          opacity: 0;
+          transition: opacity 0.5s;
+        }
+        & + label {
+          left: 4px;
+          right: 28px;
+
+          background: var(--col-bg-dark);
+
+          transition: left 0.5s, right 0.4s 0.2s;
+        }
+      }
+      &:not(:checked) {
+        background: transparent;
+        border: 0.81px solid rgba(255, 255, 255, 0.3);
+        transition: border 0.5s -0.1s;
+        &:before {
+          color: transparent;
+          transition: color 0.5s;
+        }
+        &:after {
+          color: var(--col-bg-dark);
+          transition: color 0.5s 0.2s;
+        }
+        & + label {
+          left: 28px;
+          right: 4px;
+
+          background: #e9eaf0;
+
+          transition: left 0.4s 0.2s, right 0.5s, background 0.35s -0.1s;
+        }
+      }
+    }
+  }
+}
+
 /* Contacts screen styles */
 
 .contact-screen h2,
