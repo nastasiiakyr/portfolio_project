@@ -23,7 +23,7 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/dark-theme.css" id="theme-link"/>
   </head>
 
   <body>
@@ -33,6 +33,20 @@
         <a class="navbar-brand" href="/"
           ><img src="/img/logo.svg" alt="Kyrkilan" class="cursor-hover"
         /></a>
+
+        <div class="switchers">
+          <div class="lang">
+            <a class="nav-item nav-link" href="#">UA</a>
+            <p>|</p>
+            <a class="nav-item nav-link active" href="#">EN</a>
+          </div>
+
+          <span class="switcher switcher-1">
+            <input type="checkbox" id="switcher-1" />
+            <label for="switcher-1"></label>
+          </span>
+        </div> 
+        
         <button
           class="navbar-toggler d-lg-none"
           type="button"
@@ -57,10 +71,7 @@
           />
         </button>
 
-        <span class="switcher switcher-1">
-          <input type="checkbox" id="switcher-1" />
-          <label for="switcher-1"></label>
-        </span>
+       
 
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">

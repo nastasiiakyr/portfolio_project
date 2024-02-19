@@ -246,6 +246,25 @@ a {
   opacity: 0.7;
 }
 
+.switchers {
+  margin-right: 60px;
+  display: flex;
+  gap: 60px;
+  justify-content: flex-end;
+  align-items: center;
+  width: -webkit-fill-available;
+}
+
+.lang {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.lang p {
+  margin: 0;
+}
+
 .active {
   opacity: 0.95;
 }
@@ -316,7 +335,6 @@ span.switcher {
         &:before {
           opacity: 1;
           transition: opacity 0.5s;
-          
         }
         &:after {
           opacity: 0;
@@ -642,6 +660,14 @@ span.switcher {
     gap: 30px;
   }
 
+  .switchers {
+  width: 45%;
+}
+
+.lang {
+  gap: 16px;
+}
+
   .skill-card {
     padding-top: 80px;
   }
@@ -735,7 +761,7 @@ span.switcher {
   }
 
   #header.active .container {
-    gap: 30px;
+    gap: 0px;
   }
 
   .container,
@@ -744,6 +770,16 @@ span.switcher {
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .switchers {
+    margin-right: 0;
+    gap: 16px;
+  width: 30%;
+}
+
+.lang {
+  gap: 12px;
+}
 
   .mail-link,
   .social-media-links {

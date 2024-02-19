@@ -270,6 +270,37 @@ let footerHTML = `<hr />
 
 footerSection.innerHTML = footerHTML;
 
+// THEME SWITCHING
+
+function toggleTheme() {
+  // Отримуємо поточний активний CSS файл
+  var themeLink = document.getElementById("theme-link");
+
+  // Перевіряємо, який CSS файл використовується і змінюємо його на інший
+  if (themeLink.getAttribute("href") === "/src/light-theme.css") {
+    themeLink.setAttribute("href", "/src/dark-theme.css");
+    localStorage.setItem("theme", "dark");
+  } else {
+    themeLink.setAttribute("href", "/src/light-theme.css");
+    localStorage.setItem("theme", "light");
+  }
+}
+
+// Відновлюємо тему при завантаженні сторінки
+window.onload = function () {
+  var theme = localStorage.getItem("theme");
+  if (theme) {
+    var themeLink = document.getElementById("theme-link");
+    themeLink.setAttribute(
+      "href",
+      theme === "dark" ? "/src/dark-theme.css" : "/src/light-theme.css"
+    );
+  }
+};
+
+// Викликаємо функцію збереження при зміні стану перемикача
+document.getElementById("switcher-1").addEventListener("change", toggleTheme);
+
 // WORKS CARDS HTML TEMPLATE AND FILTER
 
 // Library of projects with details
