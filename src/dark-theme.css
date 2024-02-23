@@ -46,8 +46,8 @@
     0px 41.777610778808594px 33.422088623046875px 0px rgba(16, 15, 74, 0.13);
 
   /* Cursor */
-  --cursor-bg: #b0efda;
-  --cursor-bg-line: #b0efda;
+  --cursor-bg: #fafafa;
+  --cursor-bg-line: #ffffff;
 }
 
 /* Cursor styles */
@@ -661,12 +661,12 @@ span.switcher {
   }
 
   .switchers {
-  width: 45%;
-}
+    width: 45%;
+  }
 
-.lang {
-  gap: 16px;
-}
+  .lang {
+    gap: 16px;
+  }
 
   .skill-card {
     padding-top: 80px;
@@ -774,12 +774,12 @@ span.switcher {
   .switchers {
     margin-right: 0;
     gap: 16px;
-  width: 30%;
-}
+    width: 30%;
+  }
 
-.lang {
-  gap: 12px;
-}
+  .lang {
+    gap: 12px;
+  }
 
   .mail-link,
   .social-media-links {

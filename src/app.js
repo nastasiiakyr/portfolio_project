@@ -152,19 +152,21 @@ class CircleAndDot {
   }
 
   hover() {
-    this.cursor.style.border = "10px solid #fff";
+    this.cursor.style.border = "10px solid var(--cursor-bg-line)";
   }
 
   hoverout() {
-    this.cursor.style.border = "1.25px solid #fff7";
+    this.cursor.style.border = "1.25px solid var(--cursor-bg-line)";
   }
 
   fade(distance) {
-    this.cursor.style.boxShadow = `0 ${-15 - distance}px 0 -8px #fff`;
+    this.cursor.style.boxShadow = `0 ${
+      -15 - distance
+    }px 0 -8px var(--cursor-bg-line)`;
     if (!this.fading) {
       this.fading = true;
       setTimeout(() => {
-        this.cursor.style.boxShadow = "0 -15px 0 -8px #fff";
+        this.cursor.style.boxShadow = "0 -15px 0 -8px var(--cursor-bg-line)";
         this.fading = false;
       }, 50);
     }
@@ -273,33 +275,50 @@ footerSection.innerHTML = footerHTML;
 // THEME SWITCHING
 
 function toggleTheme() {
-  // Отримуємо поточний активний CSS файл
-  var themeLink = document.getElementById("theme-link");
+  // Getting the state of the toggler
+  let switcher = document.getElementById("switcher-1");
+  let isLightTheme = switcher.checked;
 
-  // Перевіряємо, який CSS файл використовується і змінюємо його на інший
-  if (themeLink.getAttribute("href") === "/src/light-theme.css") {
-    themeLink.setAttribute("href", "/src/dark-theme.css");
-    localStorage.setItem("theme", "dark");
-  } else {
-    themeLink.setAttribute("href", "/src/light-theme.css");
-    localStorage.setItem("theme", "light");
-  }
+  // Set the theme according to the toggler's state
+  let themeLink = document.getElementById("theme-link");
+  themeLink.setAttribute(
+    "href",
+    isLightTheme ? "/src/light-theme.css" : "/src/dark-theme.css"
+  );
+
+  // Save the states to the localStorage
+  localStorage.setItem("switcherState", isLightTheme ? "true" : "false");
+  localStorage.setItem("theme", isLightTheme ? "light" : "dark");
 }
 
-// Відновлюємо тему при завантаженні сторінки
 window.onload = function () {
   var theme = localStorage.getItem("theme");
-  if (theme) {
-    var themeLink = document.getElementById("theme-link");
-    themeLink.setAttribute(
-      "href",
-      theme === "dark" ? "/src/dark-theme.css" : "/src/light-theme.css"
-    );
+
+  // Set default theme if there isn't the saved one in the localStorage
+  if (!theme) {
+    localStorage.setItem("theme", "dark");
+    theme = "dark";
   }
+
+  let themeUrl = document.getElementById("theme-link");
+  themeUrl.setAttribute(
+    "href",
+    theme === "dark" ? "/src/dark-theme.css" : "/src/light-theme.css"
+  );
+
+  // Get toggler's state from the localStorage
+  let switcherState = localStorage.getItem("switcherState");
+
+  let switcher = document.getElementById("switcher-1");
+
+  // Set the toogler according the local storage or by default
+  switcher.checked = switcherState === "true"; 
 };
 
-// Викликаємо функцію збереження при зміні стану перемикача
-document.getElementById("switcher-1").addEventListener("change", toggleTheme);
+// Changing the theme with toggler
+document.getElementById("switcher-1").addEventListener("change", function () {
+  toggleTheme();
+});
 
 // WORKS CARDS HTML TEMPLATE AND FILTER
 
