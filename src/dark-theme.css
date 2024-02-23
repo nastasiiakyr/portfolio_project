@@ -222,6 +222,7 @@ a {
 }
 
 .navbar-nav {
+  width: max-content;
   gap: 21px;
 }
 
@@ -736,7 +737,7 @@ span.switcher {
 
 @media (max-width: 576px) {
   h1 {
-    font-size: 32px;
+    font-size: 26px;
     line-height: 40px;
   }
 
