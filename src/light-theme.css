@@ -280,7 +280,6 @@ a {
 
 .active {
   color: var(--col-dark) !important;
-  opacity: 0.95;
 }
 
 .scrolling {
