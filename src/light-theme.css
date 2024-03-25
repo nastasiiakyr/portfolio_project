@@ -688,6 +688,10 @@ span.switcher {
     gap: 16px;
   }
 
+  .navbar-nav {
+    margin-top: 30px;
+  }
+
   .skill-card {
     padding-top: 80px;
   }
@@ -799,6 +803,10 @@ span.switcher {
 
   .lang {
     gap: 12px;
+  }
+
+  .navbar-nav {
+    margin-top: 30px;
   }
 
   .mail-link,
